@@ -1,51 +1,65 @@
+/* Font moderno */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #222;
 }
 
-/* Banner in alto */
-.banner {
-    text-align: center;
-    background-color: white;
-    padding: 10px 0;
-}
-
+/* Banner */
 .banner img {
-    max-width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Struttura generale */
+/* Container layout */
 .container {
-    display: flex;
+  display: flex;
 }
 
-/* Menu laterale */
-.menu {
-    width: 200px;
-    background-color: white;
-    padding: 20px;
+/* Sidebar - menu verticale */
+.sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  border-right: 2px solid #ddd;
+  min-height: 100vh;
+  padding: 20px 10px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.05);
 }
 
-.menu ul {
-    list-style-type: none;
-    padding: 0;
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.menu li {
-    margin-bottom: 10px;
+.sidebar li {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: bold;
 }
 
-.menu a {
-    text-decoration: none;
-    color: red;
-    font-weight: bold;
+.sidebar a {
+  text-decoration: none;
+  color: #d32f2f; /* Rosso acceso */
+  transition: color 0.3s;
 }
 
-/* Contenuto centrale */
-.content {
-    flex: 1;
-    padding: 20px;
+.sidebar a:hover {
+  color: #388e3c; /* Verde acceso */
 }
+
+/* Contenuto principale */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.main-content h1 {
+  color: #d32f2f;
+  margin-bottom: 20px;
+}
+
