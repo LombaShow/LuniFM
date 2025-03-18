@@ -1,41 +1,44 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% title %}</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuniFM - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Banner in alto -->
+  <header class="banner">
+    <img src="assets/bunner.jpeg" alt="Luni FM Banner">
+  </header>
 
-    <!-- Banner in alto -->
-    <header class="banner">
-        <img src="https://cdn.glitch.global/70bb9b72-29d5-4e20-99cd-1f9198b850db/LUNIFM.png?v=1741782654789" alt="Luni FM">
-    </header>
+  <!-- Layout a due colonne -->
+  <div class="container">
+    <!-- Menu laterale -->
+    <nav class="sidebar">
+      <ul>
+        <li>🏠 <a href="index.html">Home</a></li>
+        <li>⚙️ <a href="gestione.html">Gestione Squadra</a></li>
+        <li>📋 <a href="rosa.html">Rosa</a></li>
+        <li>🧒 <a href="under21.html">Under21</a></li>
+        <li>🌍 <a href="gironi.html">Gironi</a></li>
+        <li>🏆 <a href="coppe.html">Coppe</a></li>
+        <li>📅 <a href="partite.html">Partite</a></li>
+        <li>💰 <a href="mercato.html">Mercato</a></li>
+        <li>💬 <a href="forum.html">Forum</a></li>
+        <li>📜 <a href="regolamento.html">Regolamento</a></li>
+        <li>📧 <a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
 
-    <div class="container">
-        <!-- Menu laterale -->
-        <aside class="menu">
-            <ul>
-                <li><a href="index.html">🏠 Home</a></li>
-                <li><a href="gestione_squadra.html">⚙️ Gestione Squadra</a></li>
-                <li><a href="rosa.html">📋 Rosa</a></li>
-                <li><a href="under23.html">🧑‍🎓 Under23</a></li>
-                <li><a href="gironi.html">🏆 Gironi</a></li>
-                <li><a href="partite.html">📅 Partite</a></li>
-                <li><a href="amichevoli.html">⚽ Amichevoli</a></li>
-                <li><a href="mercato.html">💰 Mercato</a></li>
-                <li><a href="forum.html">💬 Forum</a></li>
-                <li><a href="regolamento.html">📜 Regolamento</a></li>
-                <li><a href="contatti.html">✉️ Contatti</a></li>
-            </ul>
-        </aside>
-
-        <!-- Contenuto dinamico -->
-        <main class="content">
-            {% content %}
-        </main>
-    </div>
-
+    <!-- Contenuto centrale -->
+    <main class="main-content">
+      <h1>Benvenuto su Luni FM!</h1>
+      <p>Questa è la pagina principale. Da qui puoi navigare verso tutte le sezioni del gioco manageriale.</p>
+    </main>
+  </div>
 </body>
 </html>
+
