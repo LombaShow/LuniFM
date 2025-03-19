@@ -46,5 +46,21 @@
             <p>Gestisci la tua squadra e porta il tuo club alla gloria!</p>
         </div>
     </div>
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const username = document.querySelector("input[name='username']").value;
+    const password = document.querySelector("input[name='password']").value;
+
+    // Login simulato: user = admin, pass = 1234
+    if (username === "admin" && password === "1234") {
+        alert("Login effettuato con successo!");
+        // Reindirizza alla pagina gestione
+        window.location.href = "gestione.html";
+    } else {
+        alert("Credenziali non valide!");
+    }
+});
+</script>
 </body>
 </html>
