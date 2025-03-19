@@ -108,3 +108,23 @@ body {
 .login-section a:hover {
     text-decoration: underline;
 }
+.squadra-options {
+    margin-top: 20px;
+}
+
+.squadra-options button {
+    display: block;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.squadra-options button:hover {
+    background-color: #ffdb4d;
+}
