@@ -128,3 +128,61 @@ body {
 .squadra-options button:hover {
     background-color: #ffdb4d;
 }
+.quick-buttons {
+    margin-bottom: 20px;
+}
+
+.quick-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.quick-buttons button:hover {
+    background-color: #666;
+}
+
+.team-layout {
+    display: flex;
+    gap: 40px;
+}
+
+.club-info {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.jerseys img {
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.club-trophies {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.trophies img {
+    margin: 10px;
+}
+
+.club-news {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.positivo {
+    color: green;
+    font-weight: bold;
+}
