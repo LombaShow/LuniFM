@@ -1,41 +1,49 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Luni FM</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>LuniFM - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Banner in alto -->
     <div class="banner">
-        <img src="banner.jpeg" alt="Banner Luni FM" />
+        <img src="bunner.jpeg" alt="LuniFM Banner">
     </div>
 
-    <!-- Contenitore principale -->
     <div class="container">
-        <!-- Menu laterale -->
-        <nav class="sidebar">
-            <ul>
-                <li>🏠 Home</li>
-                <li>⚙️ Gestione Squadra</li>
-                <li>📋 Rosa</li>
-                <li>🧒 Under21</li>
-                <li>🌍 Gironi</li>
-                <li>🏆 Coppe</li>
-                <li>📅 Partite</li>
-                <li>💰 Mercato</li>
-                <li>💬 Forum</li>
-                <li>📜 Regolamento</li>
-                <li>📧 Contatti</li>
-            </ul>
-        </nav>
+        <div class="sidebar">
+            <!-- Login sopra il menu -->
+            <div class="login-section">
+                <h2>Login</h2>
+                <form>
+                    <input type="text" placeholder="Username" required><br>
+                    <input type="password" placeholder="Password" required><br>
+                    <button type="submit">Accedi</button>
+                </form>
+            </div>
 
-        <!-- Contenuto centrale -->
-        <main class="content">
-            <h1>Benvenuto su Luni FM!</h1>
-            <p>La tua squadra, il tuo mondo calcistico!</p>
-        </main>
+            <!-- Menu -->
+            <nav>
+                <ul>
+                    <li>🏠 Home</li>
+                    <li>⚙️ Gestione Squadra</li>
+                    <li>📋 Rosa</li>
+                    <li>🧒 Under21</li>
+                    <li>🌍 Gironi</li>
+                    <li>🏆 Coppe</li>
+                    <li>📅 Partite</li>
+                    <li>💰 Mercato</li>
+                    <li>💬 Forum</li>
+                    <li>📜 Regolamento</li>
+                    <li>📧 Contatti</li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main-content">
+            <h1>Benvenuto su LuniFM</h1>
+            <p>Gestisci la tua squadra e porta il tuo club alla gloria!</p>
+        </div>
     </div>
 </body>
 </html>
