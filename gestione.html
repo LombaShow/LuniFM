@@ -2,44 +2,97 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Gestione Squadra - LuniFM</title>
+    <title>Gestione Squadra - Luni FM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="Assets/banner.jpeg" alt="LuniFM" class="banner">
-    </header>
+    <!-- Richiama base layout -->
+    <div class="header">
+        <h1>Luni FM</h1>
+    </div>
 
     <div class="container">
-        <nav class="sidebar">
-            <h2>LuniFM</h2>
+        <!-- Menu verticale sinistro -->
+        <div class="sidebar">
             <ul>
-                <li>🏠 <a href="index.html">Home</a></li>
-                <li>⚙️ <a href="gestione.html">Gestione Squadra</a></li>
-                <li>📋 <a href="#">Rosa</a></li>
-                <li>🧒 <a href="#">Under21</a></li>
-                <li>🌍 <a href="#">Gironi</a></li>
-                <li>🏆 <a href="#">Coppe</a></li>
-                <li>📅 <a href="#">Partite</a></li>
-                <li>💰 <a href="#">Mercato</a></li>
-                <li>💬 <a href="#">Forum</a></li>
-                <li>📜 <a href="#">Regolamento</a></li>
-                <li>📧 <a href="#">Contatti</a></li>
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="gestione.html" class="active">⚙️ Gestione Squadra</a></li>
+                <li><a href="#">📋 Rosa</a></li>
+                <li><a href="#">🧒 Under21</a></li>
+                <li><a href="#">🌍 Gironi</a></li>
+                <li><a href="#">🏆 Coppe</a></li>
+                <li><a href="#">📅 Partite</a></li>
+                <li><a href="#">💰 Mercato</a></li>
+                <li><a href="#">💬 Forum</a></li>
+                <li><a href="#">📜 Regolamento</a></li>
+                <li><a href="#">📧 Contatti</a></li>
             </ul>
-        </nav>
+        </div>
 
-        <main class="main-content">
+        <!-- Contenuto centrale -->
+        <div class="main-content">
             <h2>Gestione Squadra</h2>
-            <p>Benvenuto nella sezione di gestione della tua squadra!</p>
 
-            <div class="squadra-options">
-                <button onclick="alert('Modifica Nome Squadra')">Modifica Nome Squadra</button>
-                <button onclick="alert('Carica Logo Squadra')">Carica Logo Squadra</button>
-                <button onclick="alert('Scegli Colori Sociali')">Scegli Colori Sociali</button>
-                <button onclick="alert('Personalizza Maglie')">Personalizza Maglie</button>
-                <button onclick="alert('Imposta Prezzo Biglietti')">Prezzo Biglietti</button>
+            <!-- Pulsanti rapidi -->
+            <div class="quick-buttons">
+                <button>🔧 Modifica Info Club</button>
+                <button>👕 Personalizza Maglie</button>
+                <button>📜 Storia Club</button>
+                <button>💶 Sponsor</button>
+                <button>📊 Statistiche</button>
             </div>
-        </main>
+
+            <!-- Layout a due colonne -->
+            <div class="team-layout">
+                <!-- Colonna sinistra: Info Club -->
+                <div class="club-info">
+                    <h3>Collecchia</h3>
+                    <p><strong>Nazione:</strong> Italia</p>
+                    <p><strong>Stadio:</strong> Santa Lucia</p>
+                    <p><strong>Lega:</strong> Italia</p>
+                    <p><strong>Serie:</strong> B3 (2/3)</p>
+                    <p><strong>Nick:</strong> Lomba_Show</p>
+                    <p><strong>Città:</strong> Aulla (MS)</p>
+                    <p><strong>Ultimo Login:</strong> 19-03-2025</p>
+                    <p><strong>Iscritto dal:</strong> 16-11-2007</p>
+                    <p><strong>Situazione finanziaria:</strong> <span class="positivo">Florida 🟢</span></p>
+
+                    <!-- Maglie -->
+                    <div class="jerseys">
+                        <img src="https://via.placeholder.com/80x100.png?text=Maglia+Casa" alt="Maglia Casa">
+                        <img src="https://via.placeholder.com/80x100.png?text=Maglia+Trasferta" alt="Maglia Trasferta">
+                    </div>
+
+                    <!-- Gemellaggi -->
+                    <h4>Gemellaggi in corso</h4>
+                    <ul>
+                        <li>🟨 Corbanella S.C.</li>
+                        <li🟥> Mazzola United</li>
+                        <li>🟦 Serricciolo</li>
+                        <li>🟨 A.S.D. Mojito</li>
+                        <li>🟦 U.S. Podenzana</li>
+                    </ul>
+                </div>
+
+                <!-- Colonna destra: Trofei e stemma -->
+                <div class="club-trophies">
+                    <h4>Bacheca Trofei</h4>
+                    <div class="trophies">
+                        <img src="https://via.placeholder.com/60x80.png?text=Coppa1" alt="Coppa 1">
+                        <img src="https://via.placeholder.com/60x80.png?text=Coppa2" alt="Coppa 2">
+                        <img src="https://via.placeholder.com/60x80.png?text=Coppa3" alt="Coppa 3">
+                    </div>
+                    <h4>Stemma Club</h4>
+                    <img src="https://via.placeholder.com/150x200.png?text=Stemma" alt="Stemma Club">
+
+                    <div class="club-news">
+                        <h4>Ultime notizie dal club</h4>
+                        <p><strong>19-03-2025:</strong> Collecchia torna in Serie B3! Grande entusiasmo tra i tifosi...</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
