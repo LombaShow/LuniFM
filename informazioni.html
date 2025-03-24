@@ -48,12 +48,140 @@
   <a href="stadio.html">Stadio</a>
   <a href="tifosi.html">Tifosi</a>
 </div>
-    
-    <!-- Contenuto centrale -->
-     <main class="content">
-            <h2>Informazioni Club</h2>
-            <p>Qui appariranno le informazioni generali del club: nome, colori, logo, paese di appartenenza, ecc.</p>
-        </main>
-  </div>
+
+<!-- Sezione Manager -->
+<div style="border: 1px solid black; margin-top: 10px;">
+    <div style="background-color: red; color: white; padding: 5px;">Manager: Mazzinger</div>
+    <div style="padding: 10px;">
+        <table>
+            <tr><td>Nome:</td><td><b>Alan</b></td></tr>
+            <tr><td>Cognome:</td><td><b>Mazzi</b></td></tr>
+            <tr><td>Città:</td><td><b>Pallerone - MS</b></td></tr>
+            <tr><td>Nazione:</td><td><b>Italia</b></td></tr>
+            <tr>
+                <td>Home Page:</td>
+                <td><input type="text" value="http://www.isolapalmaira.com/icopert.htm" style="width: 400px;"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" value="al.mazzi@libero.it" style="width: 400px;"></td>
+            </tr>
+            <tr>
+                <td>Condividi PC con:</td>
+                <td><input type="text" value="Lomba_Show"></td>
+            </tr>
+            
+        </table>
+    </div>
+</div>
+
+<!-- Sezione Squadra -->
+<div style="border: 1px solid black; margin-top: 10px;">
+    <div style="background-color: red; color: white; padding: 5px;">Squadra: F.C. Palmaria (ID=6382)</div>
+    <div style="padding: 10px;">
+        <table>
+            <tr>
+                <td>Indirizzo Logo:</td>
+                <td><input type="text" value="https://imagizer.imageshack.com/v2/640x480q90/924/ELFr1u.jpg" style="width: 400px;"></td>
+            </tr>
+            <tr>
+                <td>Colori Sociali:</td>
+                <label for="color-primario">Colore Primario:</label>
+<select id="color-primario" name="color-primario">
+    <option value="#FF0000" style="background-color: #FF0000; color: #FFFFFF;">Rosso</option>
+    <option value="#0000FF" style="background-color: #0000FF; color: #FFFFFF;">Blu</option>
+    <option value="#008000" style="background-color: #008000; color: #FFFFFF;">Verde</option>
+    <option value="#FFFF00" style="background-color: #FFFF00; color: #000000;">Giallo</option>
+    <option value="#FFA500" style="background-color: #FFA500; color: #000000;">Arancione</option>
+    <option value="#800080" style="background-color: #800080; color: #FFFFFF;">Viola</option>
+    <option value="#FFC0CB" style="background-color: #FFC0CB; color: #000000;">Rosa</option>
+    <option value="#A52A2A" style="background-color: #A52A2A; color: #FFFFFF;">Marrone</option>
+    <option value="#000000" style="background-color: #000000; color: #FFFFFF;">Nero</option>
+    <option value="#FFFFFF" style="background-color: #FFFFFF; color: #000000;">Bianco</option>
+</select>
+
+<label for="color-secondario">Colore Secondario:</label>
+<select id="color-secondario" name="color-secondario">
+    <option value="#FF0000" style="background-color: #FF0000; color: #FFFFFF;">Rosso</option>
+    <option value="#0000FF" style="background-color: #0000FF; color: #FFFFFF;">Blu</option>
+    <option value="#008000" style="background-color: #008000; color: #FFFFFF;">Verde</option>
+    <option value="#FFFF00" style="background-color: #FFFF00; color: #000000;">Giallo</option>
+    <option value="#FFA500" style="background-color: #FFA500; color: #000000;">Arancione</option>
+    <option value="#800080" style="background-color: #800080; color: #FFFFFF;">Viola</option>
+    <option value="#FFC0CB" style="background-color: #FFC0CB; color: #000000;">Rosa</option>
+    <option value="#A52A2A" style="background-color: #A52A2A; color: #FFFFFF;">Marrone</option>
+    <option value="#000000" style="background-color: #000000; color: #FFFFFF;">Nero</option>
+    <option value="#FFFFFF" style="background-color: #FFFFFF; color: #000000;">Bianco</option>
+</select>
+
+            </tr>
+        </table>
+        <br>
+        <button style="background-color: lightgreen;">Memorizza</button>
+        <br><br>
+        <table>
+            <tr>
+                <td>
+                    <img src="maglia_home.png" width="80px" alt="Maglia Casa">
+                    <br>
+                    <button style="margin-top: 5px;">Cambia Maglia</button>
+                </td>
+                <td style="width: 50px;"></td>
+                <td>
+                    <img src="maglia_trasferta.png" width="80px" alt="Maglia Trasferta">
+                    <br>
+                    <button style="margin-top: 5px;">Cambia Maglia Trasferta</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<!-- Sezione Cambio Password -->
+<div style="border: 1px solid black; margin-top: 10px;">
+    <div style="background-color: red; color: white; padding: 5px;">Cambio Password</div>
+    <div style="padding: 10px;">
+        <table>
+            <tr>
+                <td>Immettere la password attuale</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Immettere la nuova password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Confermare la nuova password</td>
+                <td><input type="password"></td>
+            </tr>
+        </table>
+        <br>
+        <button style="background-color: lightgreen;">Cambia password</button>
+    </div>
+</div>
+
+<!-- Sezione Password XML -->
+<div style="border: 1px solid black; margin-top: 10px;">
+    <div style="background-color: red; color: white; padding: 5px;">Impostazione Password XML</div>
+    <div style="padding: 10px;">
+        Password XML: <input type="password" value="******" style="width: 300px;">
+        <br><br>
+        <button style="background-color: lightgreen;">Salva Password XML</button>
+    </div>
+</div>
+
+<!-- Sezione Cambio Nome Squadra -->
+<div style="border: 1px solid black; margin-top: 10px;">
+    <div style="background-color: red; color: white; padding: 5px;">Cambio nome squadra</div>
+    <div style="padding: 10px;">
+        <p>Qui puoi cambiare il nome alla tua squadra, ma attenzione però, questo può essere fatto una sola volta a stagione.</p>
+        Nuovo nome: <input type="text" style="width: 300px;">
+        <br><br>
+        <button style="background-color: lightgreen;">Cambia nome</button>
+    </div>
+</div>
+
+        
+        </div>
 </body>
 </html>
