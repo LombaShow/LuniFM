@@ -209,3 +209,23 @@ body {
   background-color: #d4af37; /* Oro - per effetto evidenziato */
   color: #fff;
 }
+.maglie-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.maglia {
+  width: 80px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.maglia:hover {
+  border: 2px solid red;
+}
+
+.maglia-selezionata {
+  width: 100px;
+  margin: 10px 0;
+}
