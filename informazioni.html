@@ -119,23 +119,30 @@
         <br>
         <button style="background-color: lightgreen;">Memorizza</button>
         <br><br>
-        <table>
-            <tr>
-                <td>
-                    <img src="maglia_home.png" width="80px" alt="Maglia Casa">
-                    <br>
-                    <button style="margin-top: 5px;">Cambia Maglia</button>
-                </td>
-                <td style="width: 50px;"></td>
-                <td>
-                    <img src="maglia_trasferta.png" width="80px" alt="Maglia Trasferta">
-                    <br>
-                    <button style="margin-top: 5px;">Cambia Maglia Trasferta</button>
-                </td>
-            </tr>
-        </table>
-    </div>
+      
+        <h3>Seleziona Maglia Casa</h3>
+<div class="maglie-container">
+  <img src="img/maglie/maglia1.png" alt="Maglia 1" class="maglia" onclick="selezionaMagliaCasa('img/maglie/maglia1.png')">
+  <img src="img/maglie/maglia2.png" alt="Maglia 2" class="maglia" onclick="selezionaMagliaCasa('img/maglie/maglia2.png')">
+  <img src="img/maglie/maglia3.png" alt="Maglia 3" class="maglia" onclick="selezionaMagliaCasa('img/maglie/maglia3.png')">
 </div>
+
+<h3>Seleziona Maglia Trasferta</h3>
+<div class="maglie-container">
+  <img src="img/maglie/maglia4.png" alt="Maglia 4" class="maglia" onclick="selezionaMagliaTrasferta('img/maglie/maglia4.png')">
+  <img src="img/maglie/maglia5.png" alt="Maglia 5" class="maglia" onclick="selezionaMagliaTrasferta('img/maglie/maglia5.png')">
+  <img src="img/maglie/maglia6.png" alt="Maglia 6" class="maglia" onclick="selezionaMagliaTrasferta('img/maglie/maglia6.png')">
+</div>
+
+<!-- Mostra la maglia scelta -->
+<div>
+  <h4>Maglia Casa Selezionata:</h4>
+  <img id="magliaCasaSelezionata" src="" alt="Maglia Casa" class="maglia-selezionata">
+
+  <h4>Maglia Trasferta Selezionata:</h4>
+  <img id="magliaTrasfertaSelezionata" src="" alt="Maglia Trasferta" class="maglia-selezionata">
+</div>
+
 
 <!-- Sezione Cambio Password -->
 <div style="border: 1px solid black; margin-top: 10px;">
@@ -159,6 +166,7 @@
         <button style="background-color: lightgreen;">Cambia password</button>
     </div>
 </div>
+      
 <!-- Sezione Cambio Nome Squadra -->
 <div style="border: 1px solid black; margin-top: 10px;">
     <div style="background-color: red; color: white; padding: 5px;">Cambio nome squadra</div>
