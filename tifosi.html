@@ -88,6 +88,51 @@
         // Applichiamo il colore all'icona
         document.getElementById("tifosiIcon").style.color = coloreSquadra;
     </script>
+<!-- Umore tifosi -->
+        <div class="progress-bar">
+            <div class="progress" id="umore-bar"></div>
+        </div>
 
+        <!-- Numero tifosi -->
+        <div class="fans-count">👥 <span id="numTifosi">5000</span> Tifosi</div>
+
+        <!-- Nome gruppo ultras -->
+        <div class="input-box">
+            <label>Nome del Gruppo Ultras:</label>
+            <input type="text" id="gruppoUltras" value="Ultras Luni">
+        </div>
+
+        <!-- Coro prossima partita -->
+        <div class="input-box">
+            <label>Coro per la Prossima Partita:</label>
+            <input type="text" id="coroPartita" placeholder="Inserisci il coro">
+        </div>
+
+        <!-- Atteggiamento ultras -->
+        <div class="input-box">
+            <label>Atteggiamento Ultras:</label>
+            <select id="atteggiamento">
+                <option value="incitamento">Incitamento</option>
+                <option value="pressione">Pressione</option>
+                <option value="contestazione">Contestazione</option>
+            </select>
+        </div>
+
+        <!-- Bottone salva -->
+        <button class="save-btn" onclick="salvaDati()">Salva</button>
+    </div>
+
+    <script>
+        function salvaDati() {
+            let nomeGruppo = document.getElementById("gruppoUltras").value;
+            let coro = document.getElementById("coroPartita").value;
+            let atteggiamento = document.getElementById("atteggiamento").value;
+            
+            alert("Dati salvati:\n" +
+                  "Nome Gruppo: " + nomeGruppo + "\n" +
+                  "Coro: " + coro + "\n" +
+                  "Atteggiamento: " + atteggiamento);
+        }
+    </script>
 </body>
 </html>
