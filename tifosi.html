@@ -48,10 +48,46 @@
   <a href="tifosi.html">Tifosi</a>
 </div>
     <!-- Contenuto centrale -->
-     <main class="content">
-            <h2>Tifosi</h2>
-            <p>Numero tifosi, fedeltà, soddisfazione, presenze allo stadio e altro.</p>
-        </main>
-  </div>
+     <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tifosi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #tifosiIcon {
+            width: 150px;
+            height: 150px;
+            color: #FFD700; /* Giallo Oro di default */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>I Tifosi della tua squadra</h1>
+    <p>Umore della tifoseria: <strong>81</strong>/100</p>
+    
+    <!-- Icona tifosi -->
+    <div id="tifosiContainer">
+        <svg id="tifosiIcon" width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <rect x="70" y="20" width="50" height="30" fill="currentColor"/>
+            <line x1="70" y1="20" x2="70" y2="120" stroke="black" stroke-width="5"/>
+            <circle cx="100" cy="140" r="20" fill="currentColor"/>
+            <rect x="90" y="150" width="20" height="40" fill="currentColor"/>
+            <circle cx="60" cy="150" r="15" fill="currentColor"/>
+            <circle cx="140" cy="150" r="15" fill="currentColor"/>
+        </svg>
+    </div>
+
+    <script>
+        // Simuliamo il colore della squadra salvato (poi andrà letto dal database)
+        let coloreSquadra = "#FF0000"; // Rosso, esempio
+
+        // Applichiamo il colore all'icona
+        document.getElementById("tifosiIcon").style.color = coloreSquadra;
+    </script>
+
 </body>
-</html> 
+</html>
