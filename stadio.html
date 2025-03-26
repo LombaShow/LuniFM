@@ -48,10 +48,35 @@
   <a href="tifosi.html">Tifosi</a>
 </div>
     <!-- Contenuto centrale -->
-     <main class="content">
-             <h2>Stadio</h2>
-            <p>Visualizzazione stadio, nome, espansioni, settori e prezzi biglietti.</p>
-        </main>
-  </div>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il tuo Stadio</title>
+    <link rel="stylesheet" href="stadio.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏟️ Il tuo Stadio</h1>
+
+        <!-- Nome dello Stadio -->
+        <label for="nomeStadio">Nome Stadio:</label>
+        <input type="text" id="nomeStadio" value="Stadio Olimpico" />
+
+        <!-- Capienza -->
+        <p><strong>Capienza:</strong> <span id="capienza">10.000</span> posti</p>
+
+        <!-- Prezzi biglietti -->
+        <h2>🎟️ Prezzi Biglietti</h2>
+        <label>Curva: <input type="number" id="prezzoCurva" value="7"> €</label>
+        <label>Gradinata: <input type="number" id="prezzoGradinata" value="12"> €</label>
+        <label>Tribuna: <input type="number" id="prezzoTribuna" value="25"> €</label>
+
+        <!-- Pulsante upgrade -->
+        <h2>⚒️ Espandi Stadio</h2>
+        <button id="upgradeStadio">Aumenta Capienza</button>
+        <p id="tempoCostruzione"></p>
+    </div>
+
+    <script src="stadio.js"></script>
 </body>
 </html> 
