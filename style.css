@@ -229,3 +229,23 @@ body {
   width: 100px;
   margin: 10px 0;
 }
+/* Contenitore principale per menu + contenuto tifosi */
+.main-container {
+    display: flex;  /* Affianca gli elementi */
+}
+
+/* Stile del menù */
+.menu {
+    width: 250px; /* Larghezza fissa del menù */
+    background: black;
+    color: white;
+    padding: 20px;
+    height: 100vh; /* Altezza piena */
+}
+
+/* Contenuto tifosi */
+.content {
+    flex-grow: 1; /* Occupa tutto lo spazio restante */
+    padding: 20px;
+    text-align: center;
+}
