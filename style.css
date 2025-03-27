@@ -249,3 +249,8 @@ body {
     padding: 20px;
     text-align: center;
 }
+.contenitore-centrale {
+    margin-left: 250px; /* Sposta il contenuto a destra, lasciando spazio al menu */
+    padding: 20px;
+    width: calc(100% - 250px); /* Occupa il resto dello spazio disponibile */
+}
