@@ -1,37 +1,14 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LuniFM - Home</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Banner in alto -->
-  <header class="banner">
-    <img src="assets/bunner.jpeg" alt="Luni FM Banner">
-  </header>
+{% extends "base.html" %}
 
-  <!-- Layout a due colonne -->
-  <div class="container">
-    <!-- Menu laterale -->
-    <nav class="sidebar">
-      <ul>
-        <li>🏠 <a href="index.html">Home</a></li>
-        <li>⚙️ <a href="gestione.html">Gestione Squadra</a></li>
-        <li>📋 <a href="rosa.html">Rosa</a></li>
-        <li>🧒 <a href="under21.html">Under21</a></li>
-        <li>🌍 <a href="gironi.html">Gironi</a></li>
-        <li>🏆 <a href="coppe.html">Coppe</a></li>
-        <li>📅 <a href="partite.html">Partite</a></li>
-        <li>💰 <a href="mercato.html">Mercato</a></li>
-        <li>💬 <a href="forum.html">Forum</a></li>
-        <li>📜 <a href="regolamento.html">Regolamento</a></li>
-        <li>📧 <a href="contatti.html">Contatti</a></li>
-      </ul>
-    </nav>
+{% block content %}
+    <div class="contenitore-centrale">
+        <!-- Qui va il contenuto specifico della pagina -->
+    </div>
+{% endblock %}
+  
 <!-- Contenuto centrale -->
         <div class="main-content">
             <h2>Gestione Squadra</h2>
